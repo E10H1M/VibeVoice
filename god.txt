@@ -1,0 +1,14 @@
+python demo/inference_from_file.py \
+  --model_path ./weights/VibeVoice-Large \
+  --txt_path demo/text_examples/2p_short.txt \
+  --speaker_names Alice Frank \
+  --device cuda \
+  --output_dir demo/outputs
+
+
+
+python demo/inference_from_file.py \
+  --txt_path demo/text_examples/2p_short.txt \
+  --speaker_names Alice Frank \
+  --device cuda \
+  --output_dir demo/outputs
