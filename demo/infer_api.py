@@ -402,6 +402,6 @@ if __name__ == "__main__":
         log.error("Init failed: %s\n%s", e, traceback.format_exc())
         raise
 
-    log.info("Serving on 0.0.0.0:%d | device=%s | model=%s | voices=%s | default_seed=%s",
+    log.info("Serving on 127.0.0.1:%d | device=%s | model=%s | voices=%s | default_seed=%s",
              args.port, args.device, args.model_path, args.voices_dir, str(args.default_seed))
-    uvicorn.run(app, host="0.0.0.0", port=args.port, log_level="info")
+    uvicorn.run(app, host="127.0.0.1", port=args.port, log_level="info")
